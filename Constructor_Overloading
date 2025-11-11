@@ -1,0 +1,30 @@
+// Create a real world Constructor overloading implement
+
+package CoreJavawithCode;
+
+class Laptop{
+	String Lname;
+	double price;
+	
+	Laptop(String Lname){
+		this.Lname = Lname;
+	}
+	Laptop(String Lname, double price){
+		this.Lname = Lname;
+		this.price = price;
+	}
+	public void display() {
+		System.out.println("Laptop name is :" +Lname);
+		System.out.println("Price is :" +price);
+	}
+}
+public class ConstructorOverloading {
+
+	public static void main(String[] args) {
+		Laptop l = new Laptop("Asus");
+		Laptop l1 = new Laptop("Asus", 40000);
+		l.display();
+		l1.display();
+	}
+
+}
