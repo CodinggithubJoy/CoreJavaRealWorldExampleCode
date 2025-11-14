@@ -1,0 +1,48 @@
+// Encaptualtion Real world problem
+
+package CoreJavawithCode;
+
+class Bank{
+	private String holdername;
+	private long accountNumber;
+	private double price;
+	
+	public String getHoldername() {
+		return holdername;
+	}
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setHoldername(String holdername) {
+		this.holdername = holdername;
+	}
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public void display() {
+		System.out.println("Holder name is  :" +holdername);
+		System.out.println("Account Number is : " +accountNumber);
+		System.out.println("Price is :" +price);
+		
+	}
+}
+
+public class Encapsulation {
+
+	public static void main(String[] args) {
+		Bank b = new Bank();
+		b.setHoldername("Joy");
+		b.setAccountNumber(830001478793l);
+		b.setPrice(47800);
+		System.out.println("Holder name is :"+b.getAccountNumber());
+		System.out.println("Account number is :"+b.getHoldername());;
+		System.out.println("Price is :"+b.getPrice());
+	}
+
+}
