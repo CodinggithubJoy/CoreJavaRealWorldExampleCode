@@ -1,0 +1,55 @@
+//Constructor Channing
+
+package CoreJavawithCode;
+
+class RealHuman{
+	String name;
+	int id;
+	double price;
+	long phno;
+	
+	RealHuman(){
+	
+	}
+	RealHuman(String name){
+		this();
+		this.name = name;
+	}
+	RealHuman(String name, int id){
+		this(name);
+		this.id = id;
+	}
+	RealHuman(String name,int id,double price){
+		this(name,id);
+		this.price=price;
+	}
+	RealHuman(String name,int id, double price,long phno){
+		this(name,id,price);
+		this.phno = phno;
+	}
+	public void display() {
+		System.out.println("Name is :" +name);
+		System.out.println("Serial number :" +id);
+		System.out.println("Price is :" +price);
+		System.out.println("Phone number is :" +phno);
+	}
+}
+
+public class ConstructorChanning {
+
+	public static void main(String[] args) {
+		RealHuman r = new RealHuman("Joy");
+		r.display();
+		System.out.println("================");
+		RealHuman r1 = new RealHuman("Joy", 1);
+		r1.display();
+		System.out.println("================");
+		RealHuman r2 = new RealHuman("Joy", 1,45000);
+		r2.display();
+		System.out.println("================");
+		RealHuman r3 = new RealHuman("Joy",1,45800, 7908116633l);
+		r3.display();	
+	}
+
+}
+
