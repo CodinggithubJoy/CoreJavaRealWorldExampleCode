@@ -1,0 +1,33 @@
+// Method overloading (polymorphism)
+
+package CoreJavawithCode;
+
+class Laptops{
+	public void m1(String name) {
+		System.out.println("Name is :" +name);
+		System.out.println("if you are good in Core java");
+		System.out.println("============================");
+	}
+	public void m1(String name, int id) {
+		System.out.println("Name is : " +name);
+		System.out.println("Serial number is: "+id);
+		System.out.println("Then you are perfect for Advanced java");
+		System.out.println("============================");
+	}
+	public void m1(double price, long ph) {
+		System.out.println("Price is :" + price);
+		System.out.println("Mobile number is  : "+ ph);
+		System.out.println("something else");
+	}
+}
+
+public class MethodOverloading {
+
+	public static void main(String[] args) {
+		Laptops l = new Laptops();
+		l.m1("Joy");
+		l.m1("Babu", 1);
+		l.m1(15000, 7908116633l);
+	}
+
+}
