@@ -1,0 +1,36 @@
+// Multiple inheritance (through Interface) 
+
+package CoreJavawithCode;
+
+interface Fruit{
+	void m1();
+}
+
+interface mango {
+	void m2();
+}
+
+class Apple implements Fruit,mango{
+	public void s1() {
+		System.out.println("Apple fruit is good for helath");
+	}
+	@Override
+	public void m1() {
+		System.out.println("Dry fruit also good for skin");
+	}
+	@Override
+	public void m2() {
+		System.out.println("I don't like mango");
+	}
+}
+
+public class Multiple_Inheritance {
+
+	public static void main(String[] args) {
+		Apple a = new Apple();
+		a.s1();
+		a.m1();
+		a.m2();
+	}
+
+}
