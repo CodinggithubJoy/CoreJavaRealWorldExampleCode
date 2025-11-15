@@ -1,0 +1,37 @@
+// Hierarchical Inheritance
+
+package CoreJavawithCode;
+
+class LaptopG{
+	String name = "Asus";
+	double price = 40000;
+	public void m1() {
+		System.out.println("Asus laptop is good for official purpose");
+	}
+}
+
+class Asus extends LaptopG{
+	public void m2() {
+		System.out.println("HP laptop better than Asus");
+	}
+}
+
+class HP extends LaptopG{
+	public void m3() {
+		System.out.println("MacBook Better than HP");
+	}
+}
+
+public class Hierarchical_Inheritance {
+
+	public static void main(String[] args) {
+		HP h = new HP();
+		h.m1();
+		//h.m2();
+		h.m3();
+		System.out.println("Laptop name is :" +h.name);
+		System.out.println("Price is :" +h.price);
+		
+	}
+
+}
