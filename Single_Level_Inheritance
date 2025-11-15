@@ -1,0 +1,28 @@
+// Single level inheritance 
+
+package CoreJavawithCode;
+
+class Mobile{
+	String name = "Vivo";
+	public void m1() {
+		System.out.println("M1 calling method");
+	}
+}
+
+class Iphone extends Mobile{
+	public void m2() {
+		System.out.println("M2 calling method");
+	}
+}
+
+public class SingleLevel {
+
+	public static void main(String[] args) {
+		Iphone i = new Iphone();
+		i.m1();
+		i.m2();
+		System.out.println("Mobile name is :" +i.name);
+		
+	}
+
+}
